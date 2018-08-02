@@ -6,7 +6,7 @@ var Enemy = function() {
   // The image/sprite for our enemies, this uses
   // a helper we've provided to easily load images
   this.x = 0;
-  this.y = 50;
+  this.y = 60;
   this.sprite = 'images/enemy-bug.png';
 };
 
@@ -28,7 +28,7 @@ Enemy.prototype.render = function() {
 // a handleInput() method.
 var Player = function() {
   this.x = 200;
-  this.y = 400;
+  this.y = 380;
   this.sprite = "images/char-boy.png";
 };
 
@@ -51,7 +51,7 @@ Player.prototype.handleInput = function(e) {
   } else if (e === "up") {
     if (this.y > 0) {this.y -= 85;}
   } else if (e === "down") {
-    if (this.y < 400) {this.y += 85;}
+    if (this.y < 380) {this.y += 85;}
   }
 };
 
